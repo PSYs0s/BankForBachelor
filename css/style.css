@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+
+.welcome-page-margin{
+    margin-top: 100px;
+}
+
+#myMenu{
+    width: 190px;
+    height: 540px;
+}
+
+#myMenu img{
+    width: 20px;
+}
+
+#myMenu a{
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    color: white;
+    border-radius: 5px ;
+    padding: 15px;
+    margin-left: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    left: -79px;
+}
+
+#myMenu a:hover{
+    left: 0;
+}
+
+#myMenu a:active{
+    background-color: rebeccapurple;
+}
+
+#signUp{
+    background-color: tomato;
+    top: 100px;
+}
+
+#signIn{
+    background-color: orange;
+    top: 165px;
+}
+
+#aboutBank{
+    background-color: green;
+    top: 230px;
+}
+
+#service{
+    background-color: blue;
+    top: 295px;
+}
+
+#contact{
+    background-color: black;
+    top: 360px;
+}
+
+.sign-padding{
+    margin-left: 15px;
+}
+
+.welcomePages{
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+.welcomePages img{
+    width: 200px;
+}
+
+.welcomeCards{
+    background-color: black;
+    color: white;
+    width: 100%;
+    box-shadow: 1px 1px 5px white;
+    padding: 50px;
+    border-radius: 10px;
+
+}
+.card-text-size h1,h2,h3{
+    font-size: 4vw;
+}
+
+.card-hover:hover{
+    background-color: orange;
+    color: white;
+}
+
+.submit-area{
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 5px 5px 10px;
+    color: white;
+}
+
+.submit-area:hover{
+    background-color: orange;
+}
+.status{
+    margin: 5px 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.deposite{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+@media(max-width:768px){
+    #myMenu{
+        min-width: 160px;
+    }
+}

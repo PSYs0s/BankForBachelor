@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of Bachelor</title>
+    <link rel="stylesheet" href="scripts/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="d-flex bg-dark">
+        <section id="myMenu" class="">
+            <a onclick="menuBtnHandler('signup-area')" href="#" class="" id="signUp">Sign Up <div
+                    class="sign-padding d-inline">
+                    <img src="images/user-plus-solid.svg" alt="sign up icon">
+                </div></a>
+            <a onclick="menuBtnHandler('login-area')" href="#" class="" id="signIn">Sign In <div
+                    class="sign-padding d-inline">
+                    <img src="images/sign-in-alt-solid.svg" alt="sign in icon">
+                </div></a>
+            <a onclick="menuBtnHandler('about')" href="#" id="aboutBank">About <div class="sign-padding d-inline">
+                    <img src="images/eject-solid.svg" alt="about icon">
+                </div></a>
+            <a onclick="menuBtnHandler('services')" href="#" id="service">Service <div class="sign-padding d-inline">
+                    <img src="images/concierge-bell-solid.svg" alt="service icon">
+                </div></a>
+            <a onclick="menuBtnHandler('contacts')" href="#" id="contact">Contact <div class="sign-padding d-inline">
+                    <img src="images/satellite-dish-solid.svg" alt="contact icon">
+                </div></a>
+        </section>
+        <section id="welcomePage" class="welcomePages">
+            <div class=" welcome-page-margin">
+                <div>
+                    <img src="images/university-solid.svg" alt="">
+                </div>
+                <div id="welcomeCard" class="mt-5 welcomeCards">
+                    <div class="card-text-size">
+                        <h1>BANK OF UNEMPLOYED BACHELOR'S</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup-area" class="d-none welcomePages">
+            <h1 class="text-center text-white">CREATE AN ACCOUNT</h1>
+            <div class="welcomeCards welcome-page-margin">
+                <h4>Sign Up</h4>
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputEmail3" class="visually-hidden">Email</label>
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword3" class="visually-hidden">Password</label>
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                    <div class="col-auto">
+                        <label for="birthDate" class="visually-hidden">Birthdate</label>
+                        <input type="date" class="form-control" id="birthDate" placeholder="">
+                    </div>
+                    <div class="col-auto">
+                        <label for="countryName" class="visually-hidden">Country</label>
+                        <input type="text" class="form-control" id="countryName" placeholder="Country">
+                    </div>
+                    <div class="col-auto">
+                        <label for="stateName" class="visually-hidden">State</label>
+                        <input type="text" class="form-control" id="stateName" placeholder="State">
+                    </div>
+                    <div class="col-auto">
+                        <label for="zipCode" class="visually-hidden">Zip code</label>
+                        <input type="text" class="form-control" id="zipCode" placeholder="Zip">
+                    </div>
+                    <div class="col">
+                        <fieldset class="mt-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                            <div class="col-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="option1">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button onclick="menuBtnHandler('login-area')" type="submit" id="makeAccount" class="btn btn-success">Sign
+                        Up</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="login-area" class="d-none welcomePages">
+            <h1 class="text-center text-white">LOG IN INTO YOUR ACCOUNT</h1>
+            <div class="welcomeCards welcome-page-margin">
+                <h4>Sign In</h4>
+                <input id="loginEmail" type="text" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" name="" id="loginPassword" class="form-control" placeholder="Password">
+                <br>
+                <button onclick="menuBtnHandler('transaction-area')" id="login" class="btn btn-success">Log In</button>
+            </div>
+        </section>
+        <section id="about" class="welcomePages d-none">
+            <h1 class="text-center text-white">ABOUT</h1>
+            <div class=" welcome-page-margin">
+                <div id="welcomeCard" class="mt-5 welcomeCards">
+                    <div class="card-text-size">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi deleniti ut, eligendi hic
+                            voluptas est libero? Aut eum obcaecati nisi sunt in labore. Dolorem atque asperiores iusto
+                            voluptas, similique ex ut unde et sunt enim maiores obcaecati ullam natus neque nisi
+                            mollitia, quis autem quas incidunt porro debitis eos labore! Corrupti delectus dolor iure at
+                            asperiores, repellendus id iusto, maiores perspiciatis hic error perferendis, vitae fugit
+                            eius enim eligendi nam commodi tempora? Facere laborum esse dignissimos cum, quam ab nisi,
+                            tenetur mollitia recusandae dolor asperiores? Accusamus nesciunt quam exercitationem aliquid
+                            et. Facere in possimus ad sequi dolores non quos nulla commodi tempora quidem minima
+                            voluptates reprehenderit necessitatibus eveniet enim culpa quae illum perspiciatis fugit
+                            quia eum excepturi, molestias maiores. Est ut laboriosam recusandae adipisci maiores
+                            voluptatem exercitationem blanditiis suscipit aut fuga debitis ducimus similique nostrum
+                            odit, illum accusamus nemo dignissimos quia accusantium molestiae! Qui quisquam hic esse et
+                            quidem?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="welcomePages d-none">
+            <h1 class="text-center text-white">OUR SERVICES</h1>
+            <div class=" welcome-page-margin">
+                <div id="welcomeCard" class="mt-5 d-flex text-dark welcomeCards">
+                    <div class="card card-hover" style="width: 18rem;">
+                        <div class="text-center">
+                            <img src="images/plane-departure-solid.svg" class="card-img-top" alt="loan icon">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Loan Without Profit</h5>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card card-hover mx-2" style="width: 18rem;">
+                        <div class="text-center">
+                            <img src="images/graduation-cap-solid.svg" class="card-img-top" alt="student loan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Student Loan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card card-hover" style="width: 18rem;">
+                        <div class="text-center">
+                            <img src="images/ring-solid.svg" class="card-img-top" alt="marriage logo">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Marriage Loan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="welcomePages d-none">
+            <h1 class="text-center text-white">CONTACT WITH US</h1>
+            <div class="welcome-page-margin">
+                <div class="">
+                    <div id="welcomeCard" class="mt-5 welcomeCards text-dark bg-light">
+                        <div class="card-text-size">
+                            <h5><i class="fas fa-envelope"></i>Email: abc@gmail.com</h5>
+                            <h5><i class="fas fa-phone-square-alt"></i>Phone: 010000000</h5>
+                            <h5><i class="fas fa-fax"></i>Fax: 120000</h5>
+                            <h5><i class="fas fa-link"></i>Website: www.google.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="transaction-area" class="welcomePages d-none">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposite status">
+                        <h5>Deposit</h5>
+                        <h2>$<span id="currentDeposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$<span id="currentWithdraw">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$<span id="currentBalance">00</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4>
+                        <input id="depositAmount" type="text" class="form-control"
+                            placeholder="$ amount you want to deposite">
+                        <br>
+                        <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4>
+                        <input id="withdrawAmount" type="text" class="form-control"
+                            placeholder="$ amount you want to  withdraw">
+                        <br>
+                        <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts/javascript.js"></script>
+</body>
+
+</html>
